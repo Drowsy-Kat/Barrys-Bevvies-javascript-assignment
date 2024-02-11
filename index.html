@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <h1>Barry’s Bevvies</h1>
+  <h2>order</h2>
+
+  <form id="form">
+    <div>
+      <label for="drink-size">Select a drink:</label>
+      <input type="radio"  name="drink-size" value="small" checked>
+      <label for="smoothie">Small - £2.50</label>
+      <input type="radio"  name="drink-size" value="medium">
+      <label for="milkshake">Medium - £3.00</label>
+      <input type="radio"  name="drink-size" value="large">
+      <label for="milkshake">Large - £3.55</label>
+      <input type="radio"  name="drink-size" value="extraLarge">
+      <label for="milkshake">Extra-Large - £4.20</label>
+    </div>
+    <div>
+      <label for="drink-type">Select a drink:</label>
+      <input type="radio"  name="drink-type" value="smoothie">
+      <label for="smoothie">Smoothie</label>
+      <input type="radio"  name="drink-type" value="milkshake">
+      <label for="milkshake">Milkshake</label>
+    </div>
+
+    
+
+    <div>
+      <label for="ingredients">Select your ingredients:</label>
+
+      <label>
+        <input type="checkbox" name="ingredients" value="banana">
+        Banana
+      </label>
+      <label>
+        <input type="checkbox" name="ingredients" value="mango">
+        Mango
+      </label>
+      <label>
+        <input type="checkbox" name="ingredients" value="raspberries">
+        Raspberries
+      </label>
+      <label>
+        <input type="checkbox" name="ingredients" value="cherries">
+        Cherries
+      </label>
+      <label>
+        <input type="checkbox" name="ingredients" value="passion-fruit">
+        Passion Fruit
+      </label>
+      <label>
+        <input type="checkbox" name="ingredients" value="chocolate">
+        Chocolate
+      </label>
+    </div>
+
+    <div id="base">
+     
+    </div>
+
+    
+    <div id="toppingsContainer">
+      <label for="toppings">Select your toppings (75p each):</label>
+      
+      <label>
+        <input type="checkbox" name="toppings" value="banana">
+        Malt
+      </label>
+      <label>
+        <input type="checkbox" name="toppings" value="mango">
+        Marshmallows
+      </label>
+      <label>
+        <input type="checkbox" name="toppings" value="raspberries">
+        Whipped Cream
+      </label>
+      <label>
+        <input type="checkbox" name="toppings" value="cherries">
+        Baileys
+      </label>
+      <label>
+        <input type="checkbox" name="toppings" value="passion-fruit">
+        A Flake
+      </label>
+
+
+    </div>
+
+    <button name="addToOrder" type="submit">Add to Order</button>
+    <button name="addToFav" type="submit">Add to favourite</button>
+    <button name="orderFav" type="submit">Order favourite</button>
+    <button name="placeOrder" type="submit">Place Order</button>
+  </form>
+
+
+  <p id="priceText">current drink cost: £2.5</p>
+
+  <p>Current order</p>
+
+  <ul id="allItems"></ul>
+
+
+
+  <p id="totalCostText"> Order total: £0</p>
+
+  
+</body>
+</html>
